@@ -26,16 +26,19 @@ public class controlador implements ActionListener, MouseListener{
         btnModificarLibro,
         btnEliminarLibro,
         btnLimpiarLibro,
+        iTLibros,
         
         btnInsertarSocio,
         btnModificarSocio,
         btnEliminarSocio,
         btnLimpiarSocio,
+        iTSocios,
         
         btnInsertarPrestamo,
         btnModificarPrestamo,
         btnEliminarPrestamo,
         btnLimpiarPrestamo,
+        iTPrestamos,
         
         btnConsultarNombre,
         btnConsultarApellido,
@@ -65,6 +68,8 @@ public class controlador implements ActionListener, MouseListener{
         this.vista.btnEliminarLibro.addActionListener(this);
         this.vista.btnLimpiarLibro.setActionCommand("btnLimpiarLibro");
         this.vista.btnLimpiarLibro.addActionListener(this);
+        this.vista.iTLibros.setActionCommand("iTLibros");
+        this.vista.iTLibros.addActionListener(this);
         
         this.vista.btnInsertarSocio.setActionCommand("btnInsertarSocio");
         this.vista.btnInsertarSocio.addActionListener(this);
@@ -74,6 +79,8 @@ public class controlador implements ActionListener, MouseListener{
         this.vista.btnEliminarSocio.addActionListener(this);
         this.vista.btnLimpiarSocio.setActionCommand("btnLimpiarSocio");
         this.vista.btnLimpiarSocio.addActionListener(this);
+        this.vista.iTSocios.setActionCommand("iTSocios");
+        this.vista.iTSocios.addActionListener(this);
         
         this.vista.btnInsertarPrestamo.setActionCommand("btnInsertarPrestamo");
         this.vista.btnInsertarPrestamo.addActionListener(this);
@@ -83,6 +90,8 @@ public class controlador implements ActionListener, MouseListener{
         this.vista.btnEliminarPrestamo.addActionListener(this);
         this.vista.btnLimpiarPrestamo.setActionCommand("btnLimpiarPrestamo");
         this.vista.btnLimpiarPrestamo.addActionListener(this);
+        this.vista.iTPrestamos.setActionCommand("iTPrestamos");
+        this.vista.iTPrestamos.addActionListener(this);
         
         this.vista.btnConsultarNombre.setActionCommand("btnConsultarNombre");
         this.vista.btnConsultarNombre.addActionListener(this);
@@ -360,6 +369,15 @@ public class controlador implements ActionListener, MouseListener{
                     this.vista.tablaConsultas.setModel(modelo.getTablaConsultaTitulo(titulo));
                     vista.txtConsultarTitulo.setText("");
                 }
+                break;
+            case iTLibros:
+                modelo.getITLibros();
+                break;
+            case iTSocios:
+                
+                break;
+            case iTPrestamos:
+                
                 break;
         }
     }

@@ -1,8 +1,13 @@
 package modelo;
 
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -403,5 +408,9 @@ public class modelo extends database{
             JOptionPane.showMessageDialog(null, "Error al obtener datos\n" + e.getMessage());
         }
         return tablemodel;
+    }
+    
+    public void getITLibros(){
+        
     }
 }

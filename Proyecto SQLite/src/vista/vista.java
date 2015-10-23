@@ -30,6 +30,7 @@ public class vista extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtAnoEdicionLibro = new javax.swing.JTextField();
         btnLimpiarLibro = new javax.swing.JButton();
+        iTLibros = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tablaLibros = new javax.swing.JTable();
@@ -52,6 +53,7 @@ public class vista extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtTelefonoSocio = new javax.swing.JTextField();
         btnLimpiarSocio = new javax.swing.JButton();
+        iTSocios = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tablaSocios = new javax.swing.JTable();
@@ -73,6 +75,7 @@ public class vista extends javax.swing.JFrame {
         btnModificarPrestamo = new javax.swing.JButton();
         btnInsertarPrestamo = new javax.swing.JButton();
         btnLimpiarPrestamo = new javax.swing.JButton();
+        iTPrestamos = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -124,6 +127,8 @@ public class vista extends javax.swing.JFrame {
 
         btnLimpiarLibro.setText("Limpiar");
 
+        iTLibros.setText("IT");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -148,7 +153,8 @@ public class vista extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(jLabel9)
                             .addComponent(jLabel1)
-                            .addComponent(btnLimpiarLibro))
+                            .addComponent(btnLimpiarLibro)
+                            .addComponent(iTLibros))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -181,7 +187,9 @@ public class vista extends javax.swing.JFrame {
                 .addComponent(txtAnoEdicionLibro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLimpiarLibro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(iTLibros)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(btnInsertarLibro)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnModificarLibro)
@@ -253,6 +261,8 @@ public class vista extends javax.swing.JFrame {
 
         btnLimpiarSocio.setText("Limpiar");
 
+        iTSocios.setText("IT");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -293,7 +303,9 @@ public class vista extends javax.swing.JFrame {
                             .addComponent(txtTelefonoSocio))
                         .addContainerGap())
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(btnLimpiarSocio)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnLimpiarSocio)
+                            .addComponent(iTSocios))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel7Layout.setVerticalGroup(
@@ -325,7 +337,9 @@ public class vista extends javax.swing.JFrame {
                 .addComponent(txtTelefonoSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLimpiarSocio)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(iTSocios)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(btnInsertarSocio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnModificarSocio)
@@ -416,6 +430,8 @@ public class vista extends javax.swing.JFrame {
 
         btnLimpiarPrestamo.setText("Limpiar");
 
+        iTPrestamos.setText("IT");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -438,7 +454,8 @@ public class vista extends javax.swing.JFrame {
                             .addComponent(jLabel16)
                             .addComponent(jLabel17)
                             .addComponent(jLabel18)
-                            .addComponent(btnLimpiarPrestamo))
+                            .addComponent(btnLimpiarPrestamo)
+                            .addComponent(iTPrestamos))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -467,7 +484,9 @@ public class vista extends javax.swing.JFrame {
                 .addComponent(txtNombreSocioPrestamo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLimpiarPrestamo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(iTPrestamos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addComponent(btnInsertarPrestamo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnModificarPrestamo)
@@ -711,6 +730,9 @@ public class vista extends javax.swing.JFrame {
     public javax.swing.JButton btnModificarSocio;
     public javax.swing.JLabel codigoSeleccionado;
     private javax.swing.JPanel consultas;
+    public javax.swing.JButton iTLibros;
+    public javax.swing.JButton iTPrestamos;
+    public javax.swing.JButton iTSocios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
